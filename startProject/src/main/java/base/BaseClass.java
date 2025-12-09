@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseClass {
@@ -36,6 +38,24 @@ public class BaseClass {
 		js.executeScript("arguments[0].click();", elemnet);
 	}
 	
+	public void handleSignInAlert() {
+	    try {
+	    	Wait<WebDriver> wait = new FluentWait<>(driver)
+	    	        .withTimeout(Duration.ofSeconds(10))
+	    	        .pollingEvery(Duration.ofMillis(500))
+	    	        .ignoring(NoAlertPresentException.class);
+
+	    	Alert alert = wait.until(driver -> driver.switchTo().alert());
+	        String alertText = alert.getText();
+	    	alert.accept();
+	       }
+	    catch (NoAlertPresentException e) {
+	        System.out.println("No alert present!");
+	    }
+	    catch (Exception e) {
+	        System.out.println("Unexpected error while handling alert: " + e.getMessage());
+	    }
+	}
 	
 
 }

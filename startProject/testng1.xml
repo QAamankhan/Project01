@@ -9,7 +9,7 @@
   
   <groups>
   <run>
-  <include name="logo"></include>
+  <include name="contact"></include>
   </run></groups>
     <classes>
       <class name="HomePageTestValidation.HomePageTestClass"/>

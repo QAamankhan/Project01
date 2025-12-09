@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-09T22:36:05 IST" name="Suite" finished-at="2025-12-09T22:36:11 IST" duration-ms="5840">
+  <suite started-at="2025-12-09T22:45:25 IST" name="Suite" finished-at="2025-12-09T22:45:38 IST" duration-ms="13295">
     <groups>
       <group name="Master">
-        <method signature="HomePageTestClass.TC01_LogoValidation()[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" name="TC01_LogoValidation" class="HomePageTestValidation.HomePageTestClass"/>
+        <method signature="HomePageTestClass.TC03_ContactPageValidation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" name="TC03_ContactPageValidation" class="HomePageTestValidation.HomePageTestClass"/>
       </group> <!-- Master -->
-      <group name="logo">
-        <method signature="HomePageTestClass.TC01_LogoValidation()[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" name="TC01_LogoValidation" class="HomePageTestValidation.HomePageTestClass"/>
-      </group> <!-- logo -->
+      <group name="contact">
+        <method signature="HomePageTestClass.TC03_ContactPageValidation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" name="TC03_ContactPageValidation" class="HomePageTestValidation.HomePageTestClass"/>
+      </group> <!-- contact -->
     </groups>
-    <test started-at="2025-12-09T22:36:05 IST" name="Test" finished-at="2025-12-09T22:36:11 IST" duration-ms="5840">
+    <test started-at="2025-12-09T22:45:25 IST" name="Test" finished-at="2025-12-09T22:45:38 IST" duration-ms="13295">
       <class name="HomePageTestValidation.HomePageTestClass">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" started-at="2025-12-09T22:36:05 IST" name="init" finished-at="2025-12-09T22:36:10 IST" duration-ms="5112" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" started-at="2025-12-09T22:45:25 IST" name="init" finished-at="2025-12-09T22:45:32 IST" duration-ms="7433" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,15 +24,32 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="ObjectCreation()[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" started-at="2025-12-09T22:36:10 IST" name="ObjectCreation" finished-at="2025-12-09T22:36:10 IST" duration-ms="74" status="PASS">
+        <test-method is-config="true" signature="ObjectCreation()[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" started-at="2025-12-09T22:45:35 IST" name="ObjectCreation" finished-at="2025-12-09T22:45:35 IST" duration-ms="327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ObjectCreation -->
-        <test-method signature="TC01_LogoValidation()[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" started-at="2025-12-09T22:36:10 IST" name="TC01_LogoValidation" finished-at="2025-12-09T22:36:10 IST" duration-ms="130" status="PASS">
+        <test-method signature="TC03_ContactPageValidation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" started-at="2025-12-09T22:45:35 IST" name="TC03_ContactPageValidation" data-provider="ContactExcelData" finished-at="2025-12-09T22:45:38 IST" duration-ms="2270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[88amankhan@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aman]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your site is not working properly ]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC01_LogoValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" started-at="2025-12-09T22:36:10 IST" name="tearDown" finished-at="2025-12-09T22:36:11 IST" duration-ms="422" status="PASS">
+        </test-method> <!-- TC03_ContactPageValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HomePageTestValidation.HomePageTestClass@7dcf94f8]" started-at="2025-12-09T22:45:38 IST" name="tearDown" finished-at="2025-12-09T22:45:38 IST" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
