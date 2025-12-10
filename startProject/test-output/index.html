@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="HomePageTestValidation.HomePageTestClass" class="method navigator-link" hash-for-method="TC01_LogoValidation">TC01_LogoValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="HomePageTestValidation.ProductAddToCart" class="method navigator-link" hash-for-method="TC04_ProductAdd(Nazish, India, Banglore, 446545877, 8, 2029)">TC04_ProductAdd(Nazish, India, Banglore, 446545877, 8, 2029)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +121,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">HomePageTestValidation.HomePageTestClass</span>
+              <span class="class-name">HomePageTestValidation.ProductAddToCart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC01_LogoValidation">
-                  </a> <!-- TC01_LogoValidation -->
-                  <span class="method-name">TC01_LogoValidation</span>
+                  <a name="TC04_ProductAdd(Nazish, India, Banglore, 446545877, 8, 2029)">
+                  </a> <!-- TC04_ProductAdd(Nazish, India, Banglore, 446545877, 8, 2029) -->
+                  <span class="method-name">TC04_ProductAdd</span>
+                  <span class="parameters">(Nazish,India,Banglore,446545877,8,2029)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,16 +148,11 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;listener.ListnearClass&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;logo&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;addtocart&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;HomePageTestValidation.HomePageTestClass&quot;/&gt;
+      &lt;class name=&quot;HomePageTestValidation.ProductAddToCart&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- addtocart --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -168,7 +164,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">addtocart (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -178,22 +174,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Master</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">TC01_LogoValidation</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">logo</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">TC01_LogoValidation</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -212,14 +192,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC01_LogoValidation')
-data.setCell(0, 2, 'HomePageTestValidation.HomePageTestClass')
-data.setCell(0, 3, 130);
+data.setCell(0, 1, 'TC04_ProductAdd')
+data.setCell(0, 2, 'HomePageTestValidation.ProductAddToCart')
+data.setCell(0, 3, 8930);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 130 ms</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -234,18 +214,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">HomePageTestValidation.HomePageTestClass</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TC03_ContactPageValidation</span>
-                <br/>
-                <span class="ignored-method-name">TC02_signUpValidation</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -254,23 +225,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">HomePageTestValidation.HomePageTestClass</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">HomePageTestValidation.ProductAddToCart</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init(https://demoblaze.com/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">ObjectCreation</span>
-                <span class="method-start">5138 ms</span>
+                <span class="method-start">7778 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC01_LogoValidation</span>
-                <span class="method-start">5213 ms</span>
+                <span class="method-name">TC04_ProductAdd(Nazish, India, Banglore, 446545877, 8, 2029)</span>
+                <span class="method-start">8055 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">5364 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

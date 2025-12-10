@@ -20,13 +20,12 @@ public class BaseTestClass {
 			ChromeOptions options= new ChromeOptions();
 			options.addArguments("--incognito","--disable-notifications","--start-maximized");
 			driver= new ChromeDriver(options);
-			driver.get(url);
-			
+			driver.get(url);		
 	}
 	
-	@AfterClass(alwaysRun = true)
-	public void tearDown() {
-		driver.close();
-	}
+//	@AfterClass(alwaysRun = false)
+//	public void tearDown() {
+//		driver.close();
+//	}
 
 }

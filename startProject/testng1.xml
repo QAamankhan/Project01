@@ -5,14 +5,19 @@
 <listener class-name="listener.ListnearClass"></listener>
 </listeners>
 <parameter name="URL" value="https://demoblaze.com/"></parameter>
-  <test thread-count="5" name="Test">
-  
+  <!--<test thread-count="5" name="Test">
   <groups>
   <run>
-  <include name="logo"></include>
+  <include name="contact"></include>
   </run></groups>
     <classes>
       <class name="HomePageTestValidation.HomePageTestClass"/>
     </classes>
-  </test> <!-- Test -->
+  </test> --><!-- Test --> 
+  
+  <test name="addtocart">
+  <classes>
+  <class name="HomePageTestValidation.ProductAddToCart"></class>
+  </classes>
+  </test>
 </suite> <!-- Suite -->

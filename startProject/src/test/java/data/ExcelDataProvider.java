@@ -17,4 +17,9 @@ public class ExcelDataProvider {
         return ExcelUtils.getExcelData(path, "Sheet2");
     }
 
+	@DataProvider(name = "purchaseDetails")
+    public Object[][] getDataForPurchaseDetails() {
+        String path = "D:\\Work_Space\\TestDataProject01.xlsx";   // your excel path
+        return ExcelUtils.getExcelData(path, "Sheet3");
+    }
 }

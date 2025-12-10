@@ -24,6 +24,7 @@ public class HomePageTestClass extends BaseTestClass {
 		hp = new HomePage(driver);
 	}
 
+//	 --------------------------LOGO-----------------------
 	@Test(groups = {"logo","Master"})
 	public void TC01_LogoValidation() {
 		String actualLogoText = hp.LogoValidation();
@@ -31,16 +32,16 @@ public class HomePageTestClass extends BaseTestClass {
 		System.out.println("Test case Pass");
 	}
 
+//	-------------------------SignUp------------------------------
 	@Test(groups = {"signup","Master"},dataProvider = "signUpExcelData", dataProviderClass = ExcelDataProvider.class)
 	public void TC02_signUpValidation(String username, String password) throws Throwable {
 		hp.SignInPopUp();
 		hp.ClickOnSign(username, password);
-		hp.handleSignInAlert();
 	}
 
+//	--------------------------Contact-----------------------------
 	@Test(groups = {"contact","Master"}  ,dataProvider = "ContactExcelData",dataProviderClass = ExcelDataProvider.class)
 	public void TC03_ContactPageValidation(String email,String name, String msg) {
 		hp.ClickOnContact(email, name, msg);
-		hp.handleSignInAlert();
 	}
 }
